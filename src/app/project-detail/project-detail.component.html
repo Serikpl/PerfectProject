@@ -1,0 +1,10 @@
+<div *ngIf="project">
+	<h3>Project details</h3>
+	<div>Project name: {{ project.name | uppercase }}</div>
+	<div>Project id: {{ project.id }}</div>
+	<div>
+	    <label>name:
+	      <input [(ngModel)]="project.name" placeholder="name">
+	    </label>
+	</div>
+</div>
