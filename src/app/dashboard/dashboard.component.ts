@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../entities/Project';
 import { ProjectService } from '../services/project.service';
- 
+import { HeaderComponent } from '../header/header.component';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -20,4 +21,5 @@ export class DashboardComponent implements OnInit {
     this.ProjectService.getProjects()
       .subscribe(projects => this.projects = projects.slice(1, 5));
   }
+
 }

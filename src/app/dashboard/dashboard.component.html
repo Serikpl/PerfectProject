@@ -1,8 +1,86 @@
-<h3>Top Heroes</h3>
+<app-header></app-header>
+
+<main class="panel-dashboard">
+	<div class="container">
+	
+		<div class="row">
+			<div class="col col-md-12">
+				<h1>Dashboard</h1>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p> -->
+			</div>
+		</div>
+
+		<!-- infographics -->
+		<div class="infographics">
+			<div class="row">
+				<div class="col col-md-4 col-sm-6 col-xs-12">
+					<div class="outer-circle projects-inf">
+						<div class="circle-in">
+							<span>5</span>
+						</div>
+					</div>
+					<p>projects</p>
+				</div>
+				<div class="col col-md-4 col-sm-6 col-xs-12">
+					<div class="outer-circle collabors-inf">
+						<div class="circle-in">
+							<span>7</span>
+						</div>
+					</div>
+					<p>collaborators</p>
+				</div>
+				<div class="col col-md-4 col-sm-6 col-xs-12">
+					<div class="outer-circle tasks-inf">
+						<div class="circle-in">
+							<span>15</span>
+						</div>
+					</div>
+					<p>tasks</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="projects-btns">
+			<div class="row">
+				<div class="col col-sm-6 col-xs-12">
+					<div class="project-btn current-p">
+						<a routerLink="/current-projects">
+						Current projects
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-xs-12">
+					<div class="project-btn archival-p">
+						<a routerLink="/archival-projects">
+						Archival projects
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-xs-12">
+					<div class="project-btn people-p">
+						<a routerLink="/all-collabors">
+						People
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-xs-12">
+					<div class="project-btn activity-p">
+						<a routerLink="#">
+						Activity
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</main>
+
+<!-- <h3>Top Heroes</h3>
 <div class="grid grid-pad">
   <a *ngFor="let project of projects" class="col-1-4" routerLink = "/project/{{project.id}}">
     <div class="module hero">
       <h4>{{project.name}}</h4>
     </div>
   </a>
-</div>
+</div> -->

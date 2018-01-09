@@ -1,9 +1,23 @@
-<h3>Projects</h3>
+<app-header></app-header>
 
-<ul class="projects">
-	<li *ngFor="let project of projects" >
-		<a routerLink="/project/{{project.id}}">
-			<span class="badge">{{project.id}}</span> {{project.name}}
-		</a>
-	</li>
-</ul>
+<main class="current-projects">
+
+	<div class="container">
+	
+		<a href="/dashboard">dashboard</a>
+		
+		<h1>Projects</h1>
+
+		<div class="row projects">
+			<div *ngFor="let project of projects" class="col col-md-4 col-sm-6 col-xs-12">
+				<div class="project-btn current-p">
+					<a class="one_project" routerLink="/project/{{project.id}}">
+						<span class="badge">{{project.id}}</span> {{project.name}}
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</main>

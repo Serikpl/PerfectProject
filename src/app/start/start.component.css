@@ -1,0 +1,22 @@
+main{
+	height: calc(100vh - 52px);
+	padding: 1px;
+	
+}
+main h1{
+	color: #ff4081;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 100px;
+}
+.description{
+	max-width: 60vw;
+	margin: 50px auto;
+	text-align: left;
+}
+.description p{
+	color: rgba(137, 153, 169, 0.8);
+}
+.navbar{
+	margin-bottom: 0;
+}

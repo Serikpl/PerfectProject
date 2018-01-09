@@ -1,0 +1,27 @@
+<main class="login">
+	
+	<a routerLink="/" class="link_s">Start page</a>
+
+	<div class="login-form">
+		
+		<h3>PerfectProject</h3>
+
+		<label for="email">Email</label>
+		<input [(ngModel)]="login" type="text" id='email' placeholder="Enter email" />
+
+		<label for="pas_inp">Password</label>
+		<input [(ngModel)]="password" type="password" id='pas_inp' placeholder="Enter password" />
+
+		<div class="errors disp-non">
+			* Invalid data
+		</div>
+
+		<button class="btn primary-btn" (click)="onLogin()">Login</button>
+
+		<span>
+			If you don't have account please go to
+			<a routerLink="/registration">registration</a>
+		</span>
+
+	</div>
+</main>

@@ -17,7 +17,7 @@ export class ProjectDetailComponent implements OnInit {
   constructor(
 	  private route: ActivatedRoute,
 	  private projectService: ProjectService,
-	  private location: Location
+	  private Location: Location
   	) { }
 
   ngOnInit() {
@@ -28,8 +28,12 @@ export class ProjectDetailComponent implements OnInit {
   	const id = +this.route.snapshot.paramMap.get('id');
   	this.projectService.getProject(id)
   		.subscribe(project => this.project = project);
-  	console.log(id);
-  	console.log(this.project);
+  }
+
+  goBack(): void
+  {
+    console.log(this.Location);
+    this.Location.back();
   }
 
 }
