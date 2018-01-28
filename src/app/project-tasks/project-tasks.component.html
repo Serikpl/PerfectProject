@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+
+<main class="project-part">
+
+	<app-dashboard-sidebar></app-dashboard-sidebar>
+
+	<div class="content">
+		<h3>Project tasks</h3>
+
+		<div class="task-container">
+		<!-- one task -->
+			<div class="one-task" *ngFor="let task of tasks" data-id="{{ task.id }}"
+			#onetask
+			(click)="showDescriptionTask(onetask)"
+			>
+		
+				<div class="top-line">
+					<h4 class="title-t">{{ task.title | uppercase }}</h4>
+					<div class="assignFor">
+					<span>assigned for: </span> 
+					<a href="#">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>
+						{{ task.assignedFor }}
+					</a>
+					</div>
+				</div>
+				
+				<p class="disp-non description-t">Description: {{ task.description }}</p>
+				
+				<div class="bottom-line">
+					<div class="autor-t">Author: 
+					<i class="fa fa-user-circle" aria-hidden="true"></i>
+					{{ task.author }}
+					</div>
+					<div class="date-t">date: {{ task.date }}</div>
+				</div>
+
+			</div>
+			<!-- end one task -->
+		</div>
+
+	</div>
+	
+</main>

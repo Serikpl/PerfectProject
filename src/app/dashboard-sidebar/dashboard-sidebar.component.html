@@ -1,3 +1,21 @@
-<p>
-  dashboard-sidebar works!
-</p>
+<div class="dashboard-sidebar">
+	<ul>
+		<li>
+			<a class="main-link" routerLink="/dashboard">
+				<i class="fa fa-reply-all" aria-hidden="true"></i>Dashboard
+			</a>
+		</li>
+		<li>
+			<a routerLink="/project/{{this.projectId}}/tasks">Tasks</a>
+		</li>
+		<li>
+			<a routerLink="/project/{{this.projectId}}/people">People</a>
+		</li>
+		<li>
+			<a routerLink="/project/{{this.projectId}}/files">Files</a>
+		</li>
+		<li>
+			<a routerLink="/project/{{this.projectId}}/description">Description</a>
+		</li>
+	</ul>
+</div>

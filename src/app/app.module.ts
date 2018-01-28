@@ -11,7 +11,6 @@ import { InMemoryDataService }  from './in-memory-data.service';
 // components1
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './services/message.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,20 +20,27 @@ import { RegistrationComponent } from './registration/registration.component';
 import { StartComponent } from './start/start.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardSidebarComponent } from './dashboard-sidebar/dashboard-sidebar.component';
+import { ProjectTasksComponent } from './project-tasks/project-tasks.component';
+import { ProjectMembersComponent } from './project-members/project-members.component';
+import { ProjectFilesComponent } from './project-files/project-files.component';
+import { ProjectDescriptionComponent } from './project-description/project-description.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
-    ProjectDetailComponent,
     MessagesComponent,
     DashboardComponent,
     LoginComponent,
     RegistrationComponent,
     StartComponent,
     HeaderComponent,
-    DashboardSidebarComponent
+    DashboardSidebarComponent,
+    ProjectTasksComponent,
+    ProjectMembersComponent,
+    ProjectFilesComponent,
+    ProjectDescriptionComponent
   ],
   imports: [
     BrowserModule,

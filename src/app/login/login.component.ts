@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 
+// @ViewChild('btnLogin') el:ElementRef
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.less']
 })
 export class LoginComponent implements OnInit {
 
@@ -17,10 +18,12 @@ export class LoginComponent implements OnInit {
 
   }
 
-  onLogin()
+  onLogin(keyCode)
   {
-
-    this.checkUser();
+    if(keyCode == 13)
+    {
+      this.checkUser();
+    }
   }
 
   checkUser()
@@ -38,5 +41,7 @@ export class LoginComponent implements OnInit {
     }
 
   }
+
+
 
 }

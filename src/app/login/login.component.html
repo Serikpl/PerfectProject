@@ -1,8 +1,8 @@
-<main class="login">
+<main class="login project-part">
 	
 	<a routerLink="/" class="link_s">Start page</a>
 
-	<div class="login-form">
+	<div class="login-form" (keypress)="onLogin($event.keyCode)" >
 		
 		<h3>PerfectProject</h3>
 
@@ -16,7 +16,7 @@
 			* Invalid data
 		</div>
 
-		<button class="btn primary-btn" (click)="onLogin()">Login</button>
+		<button class="btn primary-btn" (click)="checkUser()">Login</button>
 
 		<span>
 			If you don't have account please go to

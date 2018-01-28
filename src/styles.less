@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/css/fa-less/fontawesome';
+@import './assets/css/fa-less/fa-brands';
+@import './assets/css/fa-less/fa-regular';
+@import './assets/css/fa-less/fa-solid';
+
+@import './assets/less/_config';
+
+main{
+  background-color:  @main-color;
+  min-height: 100vh;
+  height: 100%;
+}
+.disp-non{
+  display: none;
+}
+
+.navbar-default {
+  border-radius: 0;
+  border: 0;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.project-part{
+  padding-top: 50px;
+  
+  .content{
+    width: calc(~"100% - " @width-sidebar);
+    margin-left: @width-sidebar;
+    padding: 20px 40px;
+    h3{
+      color: @main-font;
+      margin-bottom: 50px;
+    }
+  }
+}

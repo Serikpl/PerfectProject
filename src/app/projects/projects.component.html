@@ -11,7 +11,7 @@
 		<div class="row projects">
 			<div *ngFor="let project of projects" class="col col-md-4 col-sm-6 col-xs-12">
 				<div class="project-btn current-p">
-					<a class="one_project" routerLink="/project/{{project.id}}">
+					<a class="one_project" routerLink="/project/{{project.id}}/tasks">
 						<span class="badge">{{project.id}}</span> {{project.name}}
 					</a>
 				</div>
