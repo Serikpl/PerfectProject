@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../entities/project';
-import { PROJECTS } from '../data/mock-projects';
+// import { PROJECTS } from '../data/mock-projects';
 import { ProjectService } from '../services/project.service';
 
 @Component({
@@ -21,8 +21,11 @@ export class ProjectsComponent implements OnInit {
   getProjects():void
   {
     this.projectService.getProjects()
-      .subscribe(projects => this.projects = projects);
-      console.log(this.projects);
+      .subscribe((projects) => {
+
+        this.projects = projects;
+        console.log(this.projects);
+      });
   }
 
 }
