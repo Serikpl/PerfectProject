@@ -12,6 +12,7 @@ import { ProjectDescriptionComponent }  from './project-description/project-desc
 import { LoginComponent }  from './login/login.component';
 import { RegistrationComponent }  from './registration/registration.component';
 import { StartComponent }  from './start/start.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
 	{ path: 'registration', component: RegistrationComponent },	
 	{ path: 'dashboard', component: DashboardComponent },
 	{ path: 'people', component: PeopleComponent },
+	{ path: 'profile', component: ProfileComponent },
 	{ path: 'current-projects', component: ProjectsComponent },
 	{ path: 'project/:id/tasks', component: ProjectTasksComponent },
 	{ path: 'project/:id/people', component: ProjectMembersComponent },

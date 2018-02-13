@@ -1,0 +1,32 @@
+@import '../../assets/less/_config';
+
+.task-container{
+	max-width: 700px;
+	.one-task{
+		background-color: @fiolet;
+		color: @light-pink;
+	    padding: 10px 15px;
+    	margin-bottom: 20px;
+	    border-radius: 7px;
+		transition: all .3s ease;
+		border: 1px solid transparent;
+		&:hover{
+			border: 1px solid @light-pink;
+			cursor: pointer;
+		}
+		h4{
+			margin-top: 0;
+		}
+		.title-t{
+			max-width: 75%;
+		}
+		.top-line{
+			display: flex;
+			justify-content: space-between;
+		}
+		.bottom-line{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}

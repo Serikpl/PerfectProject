@@ -25,6 +25,7 @@ import { ProjectMembersComponent } from './project-members/project-members.compo
 import { ProjectFilesComponent } from './project-files/project-files.component';
 import { ProjectDescriptionComponent } from './project-description/project-description.component';
 import { PeopleComponent } from './people/people.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { PeopleComponent } from './people/people.component';
     ProjectMembersComponent,
     ProjectFilesComponent,
     ProjectDescriptionComponent,
-    PeopleComponent
+    PeopleComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

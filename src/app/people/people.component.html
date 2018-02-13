@@ -1,4 +1,37 @@
-<p>
-  people works!
-</p>
-<button (click)="getPeople()">CLICK</button>
+<app-header></app-header>
+
+
+<main class="project-part">
+
+  <div class="content">
+		<h3>Members</h3>
+
+		<div class="task-container">
+		<!-- one task -->
+			<div class="one-task" *ngFor="let item of people" data-id="{{ item.id }}"
+			#onetask
+			(click)="showDescriptionTask(onetask)"
+			>
+		
+				<div class="top-line">
+					<div class="assignFor">					
+						<a href="#">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
+							{{ item.assignedFor }}
+						</a>
+					</div>
+				</div>
+				
+				<p class="disp-non description-t">Description: {{ item.description }}</p>
+				
+				<div class="bottom-line">
+					<div class="date-t">date: {{ item.date }}</div>
+				</div>
+
+			</div>
+			<!-- end one task -->
+		</div>
+
+	</div>
+	
+</main>
